@@ -33,6 +33,7 @@
   --text-muted: #2a4050;
   --red-alert:  #ff2244;
   --amber:      #e8a020;
+  --green:   #0FFF50;
 
   --stroke:     rgba(79,195,232,.12);
   --stroke2:    rgba(79,195,232,.06);
@@ -235,8 +236,8 @@ body::after {
 .professional-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--ice), var(--cyan), var(--ice), transparent); }
 
 .professional-card-header { display: flex; justify-content: space-between; align-items: center; padding: .75rem 1rem; border-bottom: 1px solid var(--stroke2); }
-.cc-title { font-family: var(--font-mono); font-size: .5rem; color: var(--text-muted); letter-spacing: .2em; }
-.cc-id    { font-family: var(--font-mono); font-size: .5rem; color: var(--red-alert); letter-spacing: .15em; animation: pulse-red 2s ease-in-out infinite; }
+.cc-title { font-family: var(--font-mono); font-size: .9rem; color: var(--text-muted); letter-spacing: .2em; }
+.cc-id    { font-family: var(--font-mono); font-size: 1rem; color: var(--green); letter-spacing: .15em; animation: pulse-red 2s ease-in-out infinite; }
 
 .professional-photo { position: relative; }
 .professional-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
@@ -548,7 +549,7 @@ section { position: relative; }
     </div>
     <div class="nav-right">
       <div class="nav-alert">◉ GATE ACTIVE</div>
-      <div class="nav-btn" onclick="downloadCV()"><span>↓ Extract File</span></div>
+      <div class="nav-btn" onclick="downloadCV()"><span>↓ Extract CV</span></div>
     </div>
   </div>
 </nav>
@@ -575,14 +576,14 @@ section { position: relative; }
       <div class="hero-btns">
         <div class="btn-contract btn-c-primary" onclick="goTo('works')"><span>◈ View Operations</span></div>
         <div class="btn-contract btn-c-danger"  onclick="goTo('contact')"><span>⚡ Open Channel</span></div>
-        <div class="btn-contract btn-c-ghost"   onclick="downloadCV()"><span>↓ Extract File</span></div>
+        <div class="btn-contract btn-c-ghost"   onclick="downloadCV()"><span>↓ Extract CV</span></div>
       </div>
     </div>
     <div class="hero-right">
       <div class="professional-card">
         <div class="professional-card-header">
-          <span class="cc-title">ARCHIVE // PROFESSIONAL ID</span>
-          <span class="cc-id">◉ ACTIVE</span>
+          <!-- <span class="cc-title">PROFESSIONAL ID</span> -->
+          <span class="cc-id">◉ Open to Work</span>
         </div>
         <div class="professional-photo">
           <img src="images/MG_8191.jpg" alt="Pranish Ratna Tuladhar"/>
@@ -595,11 +596,11 @@ section { position: relative; }
           </div>
         </div>
         <div class="cc-footer">
-          <div class="cc-stat-row"><span class="cc-stat-label">DESIGNATION</span><span class="cc-stat-val">PRT</span></div>
-          <div class="cc-stat-row"><span class="cc-stat-label">POWER TYPE</span>  <span class="cc-stat-val">ARCHITECT</span></div>
-          <div class="cc-stat-row"><span class="cc-stat-label">REMUNERATION</span><span class="cc-stat-val">KNOWLEDGE</span></div>
-          <div class="cc-stat-row"><span class="cc-stat-label">THREAT LEVEL</span><span class="cc-stat-val">HIGH</span></div>
-          <div class="cc-stat-row"><span class="cc-stat-label">JURISDICTION</span><span class="cc-stat-val">KATHMANDU</span></div>
+          <div class="cc-stat-row"><span class="cc-stat-label">DESIGNATION</span><span class="cc-stat-val">Project Manager</span></div>
+          <div class="cc-stat-row"><span class="cc-stat-label">Key Responsibility</span>  <span class="cc-stat-val">Project Planning & Execution</span></div>
+          <div class="cc-stat-row"><span class="cc-stat-label">REMUNERATION</span><span class="cc-stat-val">Salary-Based</span></div>
+          <div class="cc-stat-row"><span class="cc-stat-label">Project Risk Level</span><span class="cc-stat-val">HIGH</span></div>
+          <div class="cc-stat-row"><span class="cc-stat-label">Location</span><span class="cc-stat-val">KATHMANDU</span></div>
         </div>
       </div>
     </div>
@@ -893,11 +894,11 @@ section { position: relative; }
   </div>
 </section>
 
-<!-- LIGHTBOX -->
+<!-- LIGHTBOX
 <div id="lightbox" onclick="closeLB(event)">
   <span id="lb-close" onclick="closeLB()">[ CLOSE ]</span>
   <img id="lb-img" src="" alt=""/>
-</div>
+</div> -->
 
 <script>
 'use strict';
